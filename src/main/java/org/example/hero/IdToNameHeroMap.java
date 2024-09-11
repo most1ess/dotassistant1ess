@@ -1,0 +1,117 @@
+package org.example.hero;
+
+import java.util.HashMap;
+import java.util.Map;
+
+public class IdToNameHeroMap {
+    private static final Map<Integer, String> map = new HashMap<>();
+
+    public static void fill() {
+        map.put(1, "Anti-Mage");
+        map.put(2, "Axe");
+        map.put(3, "Bane");
+        map.put(4, "Bloodseeker");
+        map.put(5, "Crystal Maiden");
+        map.put(6, "Draw Ranger");
+        map.put(7, "Earthshaker");
+        map.put(8, "Juggernaut");
+        map.put(14, "Pudge");
+        map.put(15, "Razor");
+        map.put(16, "Sand King");
+        map.put(17, "Storm Spirit");
+        map.put(18, "Sven");
+        map.put(19, "Tiny");
+        map.put(20, "Vengeful Spirit");
+        map.put(21, "Windranger");
+        map.put(22, "Zeus");
+        map.put(23, "Kunkka");
+        map.put(25, "Lina");
+        map.put(26, "Lion");
+        map.put(27, "Shadow Shaman");
+        map.put(28, "Slardar");
+        map.put(29, "Tidehunter");
+        map.put(30, "Witch Doctor");
+        map.put(31, "Lich");
+        map.put(32, "Riki");
+        map.put(33, "Enigma");
+        map.put(34, "Tinker");
+        map.put(35, "Sniper");
+        map.put(36, "Necrophos");
+        map.put(37, "Warlock");
+        map.put(38, "Beastmaster");
+        map.put(40, "Venomancer");
+        map.put(41, "Faceless Void");
+        map.put(42, "Wraith King");
+        map.put(43, "Death Prophet");
+        map.put(45, "Pugna");
+        map.put(46, "Templar Assassin");
+        map.put(47, "Viper");
+        map.put(48, "Luna");
+        map.put(49, "Dragon Knight");
+        map.put(50, "Dazzle");
+        map.put(51, "Clockwerk");
+        map.put(52, "Leshrac");
+        map.put(53, "Nature's Prophet");
+        map.put(54, "Lifestealer");
+        map.put(55, "Dark Seer");
+        map.put(56, "Clinkz");
+        map.put(57, "Omniknight");
+        map.put(59, "Huskar");
+        map.put(60, "Night Stalker");
+        map.put(61, "Broodmother");
+        map.put(62, "Bounty Hunter");
+        map.put(63, "Weaver");
+        map.put(64, "Jakiro");
+        map.put(66, "Chen");
+        map.put(69, "Doom");
+        map.put(70, "Ursa");
+        map.put(71, "Spirit Breaker");
+        map.put(72, "Gyrocopter");
+        map.put(73, "Alchemist");
+        map.put(75, "Silencer");
+        map.put(76, "Outworld Destroyer");
+        map.put(77, "Lycan");
+        map.put(78, "Brewmaster");
+        map.put(79, "Shadow Demon");
+        map.put(80, "Lone Druid");
+        map.put(81, "Chaos Knight");
+        map.put(82, "Meepo");
+        map.put(83, "Treant Protector");
+        map.put(84, "Ogre Magi");
+        map.put(85, "Undying");
+        map.put(87, "Disruptor");
+        map.put(88, "Nyx Assassin");
+        map.put(91, "Io");
+        map.put(92, "Visage");
+        map.put(94, "Medusa");
+        map.put(95, "Troll Warlord");
+        map.put(96, "Centaur Warrunner");
+        map.put(98, "Timbersaw");
+        map.put(99, "Bristleback");
+        map.put(100, "Tusk");
+        map.put(101, "Skywrath Mage");
+        map.put(102, "Abaddon");
+        map.put(103, "Elder Titan");
+        map.put(104, "Legion Commander");
+        map.put(105, "Techies");
+        map.put(106, "Ember Spirit");
+        map.put(107, "Earth Spirit");
+        map.put(108, "Underlord");
+        map.put(110, "Phoenix");
+        map.put(111, "Oracle");
+        map.put(112, "Winter Wywern");
+        map.put(113, "Arc Warden");
+        map.put(114, "Monkey King");
+        map.put(119, "Dark Willow");
+        map.put(123, "Hoodwink");
+        map.put(129, "Mars");
+        map.put(131, "Ringmaster");
+        map.put(135, "Dawnbreaker");
+        map.put(136, "Marci");
+        map.put(137, "Primal Beast");
+    }
+
+    public static Map<Integer, String> get() {
+        return map;
+    }
+}

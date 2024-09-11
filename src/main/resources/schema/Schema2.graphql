@@ -1,0 +1,33 @@
+input Request{
+    startDateTime: Int!
+    playerList: PlayerList!
+    groupBy: GroupBy,
+    take: Int!
+    gameModeIds: Int!
+}
+
+enum PlayerList {
+    SINGLE,
+}
+
+enum GroupBy {
+    STEAM_ACCOUNT_ID_HERO_ID,
+}
+
+type Query {
+    player(steamAccountId: Int!): Player!
+}
+
+type Player {
+    matchesGroupBy(request: Request!): MatchesGroupBy!
+}
+
+type MatchesGroupBy {
+    matchGroupBySteamAccountIdHeroIdType: MatchGroupBySteamAccountIdHeroIdType!
+}
+
+type MatchGroupBySteamAccountIdHeroIdType {
+    winCount: Int!
+    matchCount: Int!
+    heroId: Int!
+}

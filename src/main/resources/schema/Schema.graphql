@@ -1,0 +1,37 @@
+type WinWeek{
+    day: Int!
+    heroId: Int!
+    winCount: Int!
+    matchCount: Int!
+}
+
+enum GameModeIds{
+    ALL_PICK,
+    ALL_PICK_RANKED
+}
+
+type HeroStats {
+    winWeek(bracketIds:RankBracket!, regionIds:Region!, positionIds:Position!, gameModeIds:GameModeIds!): WinWeek
+}
+
+type Query {
+    heroStats: HeroStats
+}
+
+enum RankBracket {
+    DIVINE,
+}
+
+enum Region {
+    EUROPE,
+    CHINA,
+    SEA,
+}
+
+enum Position {
+    POSITION_1,
+    POSITION_2,
+    POSITION_3,
+    POSITION_4,
+    POSITION_5
+}
